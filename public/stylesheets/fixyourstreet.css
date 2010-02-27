@@ -1,0 +1,29 @@
+/**
+ * Map Examples Specific
+ */
+.smallmap {
+    width: 508px;
+    height: 508px;
+    border: 1px solid #ccc;
+}
+
+.olControlAttribution {
+    font-size: smaller; 
+    right: 3px; 
+    bottom: 3px; 
+    position: absolute; 
+    display: block;
+}
+
+.olControlMousePosition {
+	display: block;
+	position: absolute;
+	left: 35%;
+	background-color: #3c3c3c;
+	color: #efefef;
+	padding: 3px;
+}
+
+
+
+

@@ -1,0 +1,32 @@
+city: Barcelona
+layout: 
+    header:
+        - Repara
+        - ElTeu
+        - Carrer
+    nav:
+        - Publica una incidència
+        - Incidències
+        - Alertes
+        - Ajuda
+        - Contacte
+        - Sobre 
+
+index:
+    title: "Publica, mira o comenta incidències locals"
+    subtitle: "(com per exemple soroll, mala il·luminació, paviment o voreres en males condicions...)"
+    error: "Ho sentim, però no trobem l'adreça o codi postal. Prova de nou!"
+    request: "Escriu l'adreça o codi postal a prop de l'incidència"
+    intro:
+        title: Com publicar una incidència
+        recent: 
+            - Fotografies de incidències recents
+            - Últimes incidències publicades
+            
+category: categoria
+categories:
+    - -- Selecciona una categoria -- 
+    - Vehicle abandonat
+    - Bicicletes
+    - Parades d'autobus
+    - Parking de cotxes

@@ -1,0 +1,69 @@
+!!!
+!!! XML
+!!! Strict
+%html{ :xmlns => "http://www.w3.org/1999/xhtml", :lang => "en", 'xml:lang' => "en" }
+%head
+	%title= i18n.layout.header[0]+i18n.layout.header[1]+i18n.layout.header[2]
+	%meta{'http-equiv'=>"Content-Type", :content=>"text/html; charset=utf-8"}/
+	%meta{'http-equiv'=>"Content-Language", :content=>"en"}/
+	%link{ :href => "/img/favicon.ico", :rel => "icon", :type => "image/x-icon" }
+	%link{ :href => "/img/favicon.ico", :rel => "short icon" }
+	
+	%link{:href=>"/stylesheets/reset.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
+	%link{:href=>"/stylesheets/style.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
+	%link{:href=>"/stylesheets/fixyourstreet.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
+	
+	
+	%script{ :src => "/javascripts/jquery-1.3.2.min.js"}
+	%script{ :src => "/javascripts/OpenLayers.js" }
+	%script{ :src => "/javascripts/reportProblem.js" }
+	/
+		bring in the OpenStreetMap OpenLayers layers.
+		Using this hosted file will make sure we are kept up
+		to date with any necessary changes
+	%script{ :src => "http://www.openstreetmap.org/openlayers/OpenStreetMap.js" }
+
+//%body
+//%body{ :onload => "init()" }
+%body
+	#pageMain 
+		#header
+			%h1<
+				- if env['PATH_INFO'] != '/' || env['REQUEST_URI'] =~ /\?pc=.+/
+					%a{:href => "/"}
+						#{i18n.layout.header[0]}
+						%span#my><= i18n.layout.header[1]
+						#{i18n.layout.header[2]}
+				- else
+					#{i18n.layout.header[0]}
+					%span#my><
+						#{i18n.layout.header[1]}
+					#{i18n.layout.header[2]}
+			
+			%ul#navigation
+				%li<
+					%a{:href => "/"}= i18n.layout.nav[0]
+				%li<
+					%a{:href => "/all-reports"}= i18n.layout.nav[1]
+				%li<
+					%a{:href => "/local-alerts"}= i18n.layout.nav[2]
+				%li<
+					%a{:href => "/faq"}= i18n.layout.nav[3]
+				%li<
+					%a{:href => "/contact"}= i18n.layout.nav[4]
+				%li<
+					%a{:href => "/about"}= i18n.layout.nav[5]
+		#wrapper	
+			#content= yield
+		#footer
+			%p
+				Built by
+				%a{ :href => "http://data404.org", :title => "data404" }
+					data404
+				, inspired by
+				%a{ :href => "http://mysociety.org/" }
+					MySociety
+				work,
+				%a{ :href => "http://fixmystreet.com/" }
+					FixMyStreet
+				\.

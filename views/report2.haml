@@ -1,0 +1,71 @@
+%h1 Reporting a problem
+
+%p You have located the problem at the point marked with a purple pin on the map. If this is not the correct location, simply click on the map again. 
+
+%p Please fill in details of the problem below. The council won't be able to help unless you leave as much detail as you can, so please describe the exact location of the problem (e.g. on a wall), what it is, how long it has been there, a description (and a photo of the problem if you have one), etc. 
+
+//http://net.tutsplus.com/tutorials/html-css-techniques/20-html-forms-best-practices-for-beginners/
+
+%fieldset
+	%div
+		%label{ :for => "category" } 
+			#{i18n.category}:
+		%select{ :name => "category" }
+			- i18n.categories.each do |category|
+				%option{ :value => "#{category}" }
+					#{category}
+	%div
+		%label{ :for => "subject"} 
+			Subject:
+		%input#Subject{:type=>'text', :size=>20, :name=>'subject'}
+	%div
+		%label{ :for => "details"} 
+			Details:
+		%textarea#Details{ :type => 'text', :cols=>26, :rows=>7, :name => 'details' }
+	%div
+		%label{ :for => "photo"} 
+			Photo:
+		%input{ :type => 'file', :name => 'photo'}
+	%div
+		%label{ :for => "name"}
+			Name:
+		%input#Name{ :type => 'text', :name => 'name' }
+		.checkbox
+			%input#form_anonymous{ :name => "anonymous", :type => "checkbox", :value => "1" }
+			%label{ :for => "form_anonymous" }
+				Can we show your name publicly?
+			%p.small
+				(we never show your email address or phone number)
+	%div
+		%label{ :for => "email"}
+			Email:
+		%input#Email{ :type => 'text', :name => 'email' }
+	%div
+		%label{ :for => "phone"}
+			Phone:
+		%input#Phone{ :type => 'text', :name => 'phone' }
+
+
+%ul
+	%li
+		We will only use your personal
+		information in accordance with our
+		%a{ :href => "/faq#privacy" }
+			privacy policy.
+	%li
+		Please be polite, concise and to the point.
+	%li
+		Please do not be abusive — abusing your council devalues the service for all users.
+	%li
+		Writing your message entirely in block capitals makes it hard to read,
+		as does a lack of punctuation.
+	%li
+		Remember that FixYourStreet is primarily for reporting physical
+		problems that can be fixed. If your problem is not appropriate for
+		submission via this site remember that you can contact your council
+		directly using their own website.
+
+
+%input{ 'type' => 'submit', 'value' => 'Submit', 'class' => 'submit', 'accesskey' => 's' }
+
+

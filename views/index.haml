@@ -1,0 +1,87 @@
+- if session[:index] 
+	%p#expl
+		%strong= i18n.index.title
+		%br
+		%span.small= i18n.index.subtitle
+
+	- if message = flash(:error) 
+		%p.error= message
+	%form#postcodeForm{:action => "/", :method => "get", "accept-charset" => "utf-8" }
+		%label= i18n.index.request + " " + i18n.city
+		%input{:type=>'text', :size=>10, :name=>'pc', :id=>'pc'}
+		%input{:type=>'submit', :value=>'Go!', :id=>'submit'}
+
+	#front_intro
+		%h2= i18n.index.intro.title
+		%ol
+			%li Enter a nearby #{@city} postcode, or street name and area:
+			%li Locate the problem on a map of the area
+			%li Enter details of the problem
+			%li We send it to the council on your behalf
+		%h2 FixYourStreet updates
+		#front_stats
+	#front_recent		
+		%h2= i18n.index.intro.recent[0]
+		%h2= i18n.index.intro.recent[1]
+		%ul
+			- if @problems != nil
+				- @problems.each do |item|
+					%li< 
+						%a{:href => "/problem/#{item[:subject]}/#{item[:id]}"}= item[:subject]
+						
+- else
+	#map_box
+		#map
+
+	%form{:action => "/report", :method => "post", "accept-charset" => "utf-8", :enctype=>"multipart/form-data" }
+
+		#values
+
+		#side
+			%h1 Problems in this area 
+			%p#alert_links_area
+				%a#email_alert{:href => "/alert/feed=#{@place};20;10", :rel=> "nofollow"}
+					Email me new local problems
+				|
+				%a#rss_alert{:href => "/rss/#{@place}"}
+					%span 
+						RSS feed
+					%img{ :title => "RSS feed of recent local problems", :src => "/img/feed.png", :border => "0", :height => "16", :alt => "RSS feed", :width => "16", :style => "vertical-align: top;" }
+	
+			%p#text_map
+				To report a problem, simply
+				%strong
+					click on the map
+				at the correct location.
+				%span.small
+					If you cannot see the map,
+					%a{ :href => "?submit%5fmap=1;pc=churchill;skipped=1", :rel => "nofollow" }
+						skip this
+						step
+						\.
+				#nearby_lists
+					%h2
+						Reports on and around the map
+					%ul#current
+						%li
+							No problems have been reported yet.
+					%h2#closest_problems
+						Closest nearby problems
+						%span.small
+							(within 1km)
+					%ul#current_near
+						//%li
+						//	%a{ :href => "/report/58243" }
+						//		Derogatory Graffiti
+						//		%span.small
+						//			(3.6km)
+						//	%span.small
+						//		(fixed)
+						//%li
+						//	%a{ :href => "/report/59014" }
+						//		Sales cars on private car park.
+						//		%span.small
+						//			(3.7km)
+	%script{ :type => "text/javascript" }
+		setMap(#{@lat}, #{@lon});
+

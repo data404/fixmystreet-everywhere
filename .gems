@@ -1,0 +1,5 @@
+haml --version 2.2.14
+maruku --version 0.6.0
+sequel --version 3.7.0
+geokit --version 1.5.0
+sinatra-r18n --version 0.3.2

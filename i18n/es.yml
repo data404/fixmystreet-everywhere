@@ -1,0 +1,85 @@
+%YAML 1.2
+---
+city: Barcelona
+layout: 
+    header:
+        - Repara
+        - Tu
+        - Calle
+    nav:
+        - Publica un problema
+        - Todos los problemas
+        - Alertas
+        - Ayuda
+        - Contacto
+        - Sobre
+
+index:
+    title: Publica, mira o comenta problemas locales
+    subtitle: "(como por ejemplo ruido, mala iluminación, pavimento o aceras en malas condiciones...)"
+    request: Escribe una dirección o código postal de
+    error: "Lo siento, no encontramos la dirección que has escrito"
+    intro:
+        title: Cómo publicar un problema
+        recent: 
+            - Fotos de problemas recientes
+            - Últimos problemas publicados
+            
+            
+faq: !!markdown
+    "#Preguntas más frecuentes
+    
+##¿Qué es FixYourStreet?
+
+**FixYourStreet** es un clon del popular sitio [FixMyStreet](http://www.fixmystreet.com/), lanzado a principios de febrero de 2007. El objetivo de FixMyStreet es ayudar a la gente que informe, vea, o comente los problemas locales que han encontrado al ayuntamiento local, simplemente localizarlos en un mapa. Por otra parte, el propósito de FixYourStreet es crear una aplicación agnque permite a los agnósticos las personas a adaptarse a su ciudad o pueblo en una forma de moda.
+
+##¿Qué tipo de problemas debería informe con FixYourStreet?
+
+FixYourStreet, como el original, es principalmente para informar cosas que se han roto o sucio o dañado, o sean objeto de dumping, y la necesidad de fijación, limpieza o de compensación, tales como:\n
+
+* Vehículos abandonados\n
+* Suciedad (excrementos, orina, vómitos...)\n
+* Ruido\n
+* Adhesivos, pegatinas, anuncios\n
+* Semáforos rotos\n
+* papereres llenas\n
+* Socavones, pavimentos en mal estado\n
+
+## Lo que no es FixMyStreet buscando?
+
+FixMyStreet no es una manera de ponerse en contacto con su consejo para todos los temas - Por favor, use FixMyStreet sólo para problemas tales como la anterior. A menudo los informes de problemas ruta a través de los servicios de limpieza o de las carreteras y por tanto usar FixMyStreet para otras cuestiones que pueden resultar en un retraso en su informe de llegar al departamento adecuado. Tendrá que ponerse en contacto con su consejo directamente para problemas tales como:\n
+
+* Comportamientos antisociales\n
+* Polución y contaminación\n
+* Missing wheelie bins or recycling boxes or missed rubbish collections\n
+* Proposals for speed bumps/ CCTV/ pedestrian crossings/ new road layouts/ etc. \n
+* Complaining about your neighbours \n
+* Complaining about the council\n
+* Joy riding, drug taking, animal cruelty, or other criminal activity\n
+
+Councils often have direct hotlines for these sorts of issues.\n
+
+## How do I use this site\n
+
+After entering a postcode or location, you are presented with a map of that area. You can view problems already reported in that area, or report ones of your own simply by clicking on the map at the location of the problem.\n
+
+## How are the problems solved?\n
+
+They are reported to the relevant council by email. The council can then resolve the problem the way they normally would. Alternatively, you can discuss the problem on the website with others, and then together lobby the council to fix it, or fix it directly yourselves.\n
+    
+## Is it free?\n
+
+The site is free to use, yes. FixMyStreet is run by a registered charity, though, so if you want to make a contribution, please do.\n
+
+## Can I use FixMyStreet on my mobile?\n
+
+There is an iPhone app for FixMyStreet, written by us and available for download on the App Store (link opens the App Store in iTunes). There is an Android app written by a volunteer, Anna Powell-Smith, available from the Android Market.\n
+    
+## Why do you only cover the countries of Great Britain?\n
+
+We would love to cover Northern Ireland, but as we were funded for FixMyStreet by the Department for Constitutional Affairs (now the Ministry of Justice), we were covered for Ordnance Survey data (but not OSNI data) by the Pan-Governmental Agreement. The cost for these maps would be prohibitively expensive for the small charity that we are – if you know of any way we could get access to the Ordnance Survey for Northern Ireland's maps so that we can add them to the site, that'd be great.\n
+  
+    
+    
+    
+"

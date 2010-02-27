@@ -1,0 +1,21 @@
+#map_box
+	#map
+		
+#side
+
+	%h1= @problem[:name]
+	//%p= @problem[:lat]
+	//%p= @problem[:lon]
+	%p= @problem[:created_at]
+	%p= @problem[:details]
+	%p= @problem[:subject]
+	%p
+		%a{:href => "/category/#{@problem[:category]}" }= @problem[:category]
+	%img{'src' => @problem[:photo]}
+
+	%p
+		%a{:href => "/"} Return to index
+		
+		
+%script{ :type => "text/javascript" }
+	setMap(#{@problem[:lon]}, #{@problem[:lat]});

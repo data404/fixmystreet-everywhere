@@ -1,0 +1,85 @@
+city: Barcelona
+layout: 
+    header:
+        - Fix
+        - Your
+        - Street
+    nav:
+        - Report a problem
+        - All problems
+        - Local alerts
+        - Help
+        - Contact
+        - About
+index:
+    title: "Report, view, or discuss local problems"
+    subtitle: "like noise, fly tipping, broken paving slabs, or street lighting"
+    request:  "Enter a nearby postcode, or street name and area:"
+    error: "Sorry, we could not find that location."
+    intro:
+        title: How to report a problem
+        recent: 
+            - Photos of recent reports
+            - Recently reported problems  
+            
+          
+category: categoria  
+categories:
+    - -- Pick a category -- 
+    - Abandoned vehicles
+    - Benches / bicycle racks
+    - Bus stops
+    - Car parking
+    - Dog fouling
+    - Flyposting
+    - Flytipping
+    - Graffiti
+    - Parks/landscapes
+    - Pavements/footpaths
+    - Potholes
+    - Public rights of way
+    - Public toilets
+    - Road traffic signs
+    - Roads/highways
+    - Rubbish
+    - Street cleaning
+    - Street lighting
+    - Street nameplates
+    - Traffic lights
+    - Trees
+    - Noise
+    - Robbery
+    - Incivic actitude
+    - Other
+        
+        
+faq:
+    title: Frequently Asked Questions
+    first_question: What is FixYourStreet?
+    first_answer: !!markdown
+        **FixYourStreet** is a clone of the popular site [FixMyStreet](http://www.fixmystreet.com/), launched in early February 2007. The goal of FixMyStreet is to help people report, view, or discuss local problems they've found to their local council by simply locating them on a map. On other hand, the purpose of FixYourStreet is to create an agnostic app that allows people adapt it to its city or town in a fashion way.
+    second_question: What sort of problems should I report with FixMyStreet?
+    second_answer: "FixMyStreet is primarily for reporting things which are broken or dirty or damaged or dumped, and need fixing, cleaning or clearing, such as:"
+    second_list:
+        - Abandoned vehicles
+        - Dog Fouling 
+        - Flyposting or graffiti 
+        - Flytipping or litter 
+        - Streetcleaning, such as broken glass in a cycle lane 
+        - Unlit lamposts
+        - Potholes
+    third_question: What isn’t FixMyStreet for?
+    third_answer: "FixMyStreet is not a way of getting in touch with your council for all issues – please use FixMyStreet only for problems such as the above. We often route problem reports via cleansing services or highways and so using FixMyStreet for other matters may result in a delay in your report getting to the right department. You will need to contact your council directly for problems such as:"
+    third_list:
+        - Anti-social behaviour
+        - Noise pollution or barking dogs
+        - Missing wheelie bins or recycling boxes or missed rubbish collections
+        - Proposals for speed bumps/ CCTV/ pedestrian crossings/ new road layouts/ etc.
+        - Complaining about your neighbours
+        - Complaining about the council
+        - Joy riding, drug taking, animal cruelty, or other criminal activity
+    third_annex: 
+        "Councils often have direct hotlines for these sorts of issues."
+    fourth_question: "How do I use the site?"
+    fourth_answer: "After entering a postcode or location, you are presented with a map of that area. You can view problems already reported in that area, or report ones of your own simply by clicking on the map at the location of the problem."
+       
